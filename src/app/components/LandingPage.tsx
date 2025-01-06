@@ -41,7 +41,7 @@ export default function LandingPage() {
 
   return (
     <>
-      <div id="home">
+      <div id="home" className="mt-20">
         <div className="w-[calc(100%-4rem)] mx-auto rounded-3xl h-[35rem] overflow-hidden flex-1 mt-10 md:mt-0">
           <Vortex
             backgroundColor="black"
@@ -68,9 +68,6 @@ export default function LandingPage() {
               </span>
               <span className="text-lg font-semibold with-bullet">
                 Vehicle RC Sewa
-              </span>
-              <span className="text-lg font-semibold with-bullet">
-                Driving License Sewa
               </span>
               <span className="text-lg font-semibold with-bullet">
                 Passport Sewa

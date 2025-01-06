@@ -41,10 +41,10 @@ export default function Header() {
   return (
     <>
       <div
-        className={`bg-white shadow-md sticky top-0 z-50 transition-all duration-500 ${
+        className={`bg-white shadow-md fixed top-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? "md:w-[25rem] w-[20rem] px-6 py-3 mx-auto rounded-b-3xl shadow-xl bg-neutral-100"
-            : "w-screen p-6 transition-opacity duration-500"
+            ? "md:w-[25rem] w-[20rem] px-6 py-3 rounded-b-3xl shadow-xl bg-opacity-25 text-neutral-300 hover:bg-neutral-50 hover:text-neutral-700 transition-all duration-300"
+            : "w-screen p-6"
         }`}
       >
         <ul className="flex flex-row justify-center items-center gap-6 text-xl font-extrabold">
