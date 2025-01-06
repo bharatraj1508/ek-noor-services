@@ -92,15 +92,19 @@ export function Services() {
   return (
     <>
       <div id="services">
-        <div className="flex justify-center items-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-neutral-800">
-            Services that we offer
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto h-screen">
-          {features.map((feature, index) => (
-            <Feature key={feature.title} {...feature} index={index} />
-          ))}
+        <div className="h-screen dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+          {/* Radial gradient for the container to give a faded look */}
+          <div className="absolute pointer-events-none inset-0"></div>
+          <div className="flex justify-center items-center">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-neutral-800 orbitron">
+              Services that we offer
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto h-screen dm-serif-text">
+            {features.map((feature, index) => (
+              <Feature key={feature.title} {...feature} index={index} />
+            ))}
+          </div>
         </div>
       </div>
     </>

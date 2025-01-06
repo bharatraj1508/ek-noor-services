@@ -51,7 +51,7 @@ export default function Header() {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="hover:underline cursor-pointer hover:text-neutral-600 hover:scale-125 transition-all duration-500 capitalize text-base md:text-xl"
+              className="hover:underline dm-serif-text cursor-pointer hover:text-neutral-600 hover:scale-125 transition-all duration-500 capitalize text-base md:text-xl"
             >
               <Link to={link} smooth duration={500}>
                 {link}
