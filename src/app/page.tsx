@@ -1,6 +1,7 @@
 import React from "react";
 import LandingPage from "./components/LandingPage";
 import Header from "./components/Header";
+import About from "./components/About";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
           <div className="absolute pointer-events-none inset-0"></div>
           <Header />
           <LandingPage />
+          <About />
         </div>
       </div>
     </div>
